@@ -58,17 +58,17 @@ To build and run the project locally:
 
 ### 1. Run Locally
 
-1. Clone the repository:
+### 2. Clone the repository
 
-2. Build the project with Gradle:
+### 3. Build the project with Gradle:
 ./gradlew clean build
 ./gradlew bootRun
 
-3. Run with Docker Compose
+### 4. Run with Docker Compose:
 docker-compose build
 docker-compose up
 
-4.Test the API:
+### 5.Test the API:
 http://localhost:8080/sum?a=1&b=2
 
 Expected response:
@@ -83,7 +83,7 @@ API Endpoints:
 /divide	GET	Returns division a / b	a, b
 
 
-Testing
+### 6.Testing
 
 Unit tests are in calculator/src/test/java and rest/src/test/java.
 
