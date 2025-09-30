@@ -61,12 +61,12 @@ To build and run the project locally:
 ### 2. Clone the repository
 
 ### 3. Build the project with Gradle:
-./gradlew clean build
-./gradlew bootRun
+- ./gradlew clean build
+- ./gradlew bootRun
 
 ### 4. Run with Docker Compose:
-docker-compose build
-docker-compose up
+- docker-compose build
+- docker-compose up
 
 ### 5.Test the API:
 http://localhost:8080/sum?a=1&b=2
@@ -77,10 +77,14 @@ Expected response:
 }
 
 API Endpoints:
-/sum	GET	Returns sum of a and b	a, b
-/subtract	GET	Returns difference a - b	a, b
-/multiply	GET	Returns multiplication a * b	a, b
-/divide	GET	Returns division a / b	a, b
+
+- /sum	GET	Returns sum of a and b	a, b
+
+- /subtract	GET	Returns difference a - b	a, b
+
+- /multiply	GET	Returns multiplication a * b	a, b
+
+- /divide	GET	Returns division a / b	a, b
 
 
 ### 6.Testing
@@ -90,4 +94,5 @@ Unit tests are in calculator/src/test/java and rest/src/test/java.
 Kafka integration tests use the @EmbeddedKafka annotation in rest/src/test/java.
 
 To run tests:
+
 ./gradlew test
